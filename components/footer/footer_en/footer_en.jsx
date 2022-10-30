@@ -42,15 +42,15 @@ export default function Footer_en() {
             Contacts
           </p>
         </li>
-        <li
+        {/* <li
           id="language"
           // onMouseEnter={handleToggle}
           className={`${s.footer__item} ${s.footer__language}`}
         >
           <p id="language" onClick={handleToggle}>
             Language
-          </p>
-          {language && (
+          </p> */}
+        {/* {language && (
             <ul
               id="language"
               className={`${s.footer__modal__list} ${s.footer__modal__list__language}`}
@@ -62,17 +62,17 @@ export default function Footer_en() {
               </li>
               <li id="language">
                 <Link href="/ua">
-                  <a id="language">Ukraine</a>
+                  <a id="language">UA</a>
                 </Link>
               </li>
               <li id="language">
                 <Link href="/ru">
-                  <a id="language">Russian</a>
+                  <a id="language">RU</a>
                 </Link>
               </li>
             </ul>
-          )}
-        </li>
+          )} */}
+        {/* </li> */}
         <li
           // onMouseEnter={handleToggle}
           className={`${s.footer__item} ${s.footer__works}`}
@@ -93,8 +93,7 @@ export default function Footer_en() {
           )}
         </li>
       </ul>
-
-      <div className={s.footer__image}>
+      {/* <div className={s.footer__image}>
         <Image
           className={s.footer__image}
           src={image}
@@ -102,7 +101,9 @@ export default function Footer_en() {
           height={100}
           alt="Logo footer"
         />
-      </div>
+      </div> */}
+      {/* <p className={s.qweTitle}>PRIËM</p> */}
+      {/* <p className={s.qweSubTitle}>production</p> */}
     </div>
   );
 }

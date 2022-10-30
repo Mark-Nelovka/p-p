@@ -42,7 +42,7 @@ export const Hero = () => {
       <div className={s.videoContainer}>
         <video
           className={s.video}
-          playsInline
+          // playsInline
           autoPlay
           loop
           muted
@@ -52,7 +52,7 @@ export const Hero = () => {
           <span>P</span>
           <span>R</span>
           <span>I</span>
-          <span>Ё</span>
+          <span>Ë</span>
           <span>M</span> PRODUCTION
         </div>
         <Link href={`${router.pathname}/works`}>Check out all works</Link>

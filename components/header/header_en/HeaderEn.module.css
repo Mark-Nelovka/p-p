@@ -143,19 +143,32 @@
     }
 
          .navigationMenuList > li > a {
-        font-family: "Anton";
+        /* font-family: "Anton"; */
+                font-family: 'Bebas Neue', cursive;
         font-size: 30px;
         font-weight: 400;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         color: var(--white);
     }
+
+
     
      .navigationMenuList > li > button {
-        font-family: "Anton";
+        /* font-family: "Anton"; */
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: var(--white);
+    }
+
+    .navigationMenuList > li:last-child > button {
+        /* font-family: "Anton"; */
+        font-family: 'Bebas Neue', cursive;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 2px;
-        color: var(--white);
+        color: rgb(196, 4, 4);
     }
 
     .navigationMenuList > li > button::selection {
@@ -170,5 +183,8 @@
             color: rgb(196, 4, 4);
         }
 
+        .navigationMenuList>li:last-child >button:hover {
+            color: white;
+        }
     
 }
