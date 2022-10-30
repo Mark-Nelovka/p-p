@@ -1,13 +1,16 @@
-import Image from "next/image"
-import s from "../works.module.css"
+// import Image from "next/image"
+import s from "../works.module.css";
 import container from "../../../styles/container.module.css";
 
-function Works_en({snapshot}){
-let i = 1;
-    return(
-        <>
-            <section className={`${container.container__stretch} ${s.works__section}`}>
-                <ul className={s.works__list}>
+function Works_en({ snapshot }) {
+  let i = 1;
+  return (
+    <>
+      <section
+        className={`${container.container__stretch} ${s.works__section}`}
+      >
+        Works
+        {/* <ul className={s.works__list}>
                     {snapshot.map((snap)=>(
                         <li className={s.works__item} key = {i++}>
                             <span className={s.works__image}>
@@ -19,13 +22,11 @@ let i = 1;
                                 <p className={s.works__name}>{snap.name}</p>
                                 <p className={s.works__dop}>{snap.dop}</p>
                             </div>
-                            {/* {console.log(snap)} */}
                         </li>
-
                     ))}
-                </ul>
-            </section>
-        </>
-    )
+                </ul> */}
+      </section>
+    </>
+  );
 }
-export default Works_en
+export default Works_en;
