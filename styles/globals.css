@@ -1,6 +1,7 @@
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+
         /* scrollbar-color: #6969dd #e0e0e0;
           scrollbar-width: thin; */
   }
@@ -95,6 +96,7 @@
   :root {
     --black: #000000;
     --white: #ffffff;
+    --vh: 3.93px;
   }
 
 

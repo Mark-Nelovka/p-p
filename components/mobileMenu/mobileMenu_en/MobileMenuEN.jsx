@@ -19,9 +19,12 @@ export default function MobileMenuEn({ toggleShowMenu, show }) {
       return;
     }
     window.addEventListener("keydown", toggleShowMenu);
-    return () => {
-      window.removeEventListener("keydown", toggleShowMenu);
-    };
+    // return () =>
+    // if (show === "close") {
+    //   console.log("first");
+    //   window.removeEventListener("keydown", toggleShowMenu);
+    //   return;
+    // }
   }, [toggleShowMenu, show]);
 
   return (

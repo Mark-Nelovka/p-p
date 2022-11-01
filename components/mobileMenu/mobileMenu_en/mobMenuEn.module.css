@@ -12,6 +12,8 @@ position: fixed;
     background-color: black;
     animation: .2s linear menu;
     z-index: 1;
+    overflow-y: scroll;
+    /* min-height: calc(var(--vh, 1vh)*100); */
 }
 
 @keyframes menu {

@@ -44,9 +44,11 @@ export default function HeaderEn() {
   }, [visibleLogo]);
 
   const toggleShowMenu = (e) => {
+    console.log(show);
     const { id } = e.currentTarget;
     if (e.key === "Escape" || id === "close") {
       setShow("close");
+      window.removeEventListener("keydown", toggleShowMenu);
     }
   };
 
