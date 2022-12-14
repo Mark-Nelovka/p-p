@@ -7,7 +7,7 @@ import {
   INSTAGRAM,
   EMAIL_PRODUCTION,
 } from "../../../Constants/Constants";
-import LogoMobile from "../../../images/Logo.png";
+import LogoMobile from "../../../images/LogoFix-removebg-preview.png";
 import CloseModalIcon from "../../../images/Close-icon.svg";
 import INST from "../../../images/instagram.svg";
 import s from "./mobMenuRu.module.css";

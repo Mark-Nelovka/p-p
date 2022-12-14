@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
-.headerSection {
-            position: fixed;
-            width: 100%;
+    .headerSection {
+        position: fixed;
+        width: 100%;
         padding: 20px 0px 10px 0px;
         z-index: 1;
 
@@ -25,20 +25,22 @@
     .logoContainer {
         display: none;
     }
+
     .animationLogo {
-       display: none;
+        display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-.headerSection {
-            position: fixed;
-            width: 100%;
+    .headerSection {
+        position: fixed;
+        width: 100%;
         padding: 30px 5px 20px 20px;
         z-index: 1;
 
     }
-        .headerContainer {
+
+    .headerContainer {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -56,8 +58,9 @@
     .logoContainer {
         display: none;
     }
-     .animationLogo {
-       display: none;
+
+    .animationLogo {
+        display: none;
     }
 }
 
@@ -82,13 +85,13 @@
     .navigationMenuList {
         display: flex;
         align-items: center;
-                background-color: black;
-                    border-radius: 22px;
-                    padding-left: 15px;
-                    padding-right: 15px;
+        background-color: black;
+        border-radius: 22px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .navigationMenuList > li:not(:last-child) {
+    .navigationMenuList>li:not(:last-child) {
         margin-right: 30px;
     }
 
@@ -100,60 +103,55 @@
 
     .animationLogo {
         display: block;
-            animation: logo .1s linear;
-            animation-fill-mode: forwards;
+        animation: logo .1s linear;
+        animation-fill-mode: forwards;
     }
 
     @keyframes logoShow {
         0% {
-    opacity: 0;
-}
+            opacity: 0;
+        }
 
-25% {
-    opacity: .3;
-}
-50% {
-    opacity: 0.5;
-}
-75% {
-    opacity: .8;
-}
-100% {
-    opacity: 1;
-}
+        25% {
+            opacity: .3;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: .8;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 
     @keyframes logo {
-0% {
-    opacity: 1;
-}
+        0% {
+            opacity: 1;
+        }
 
-25% {
-    opacity: .8;
-}
-50% {
-    opacity: 0.5;
-}
-75% {
-    opacity: .3;
-}
-100% {
-    opacity: 0;
-}
+        25% {
+            opacity: .8;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: .3;
+        }
+
+        100% {
+            opacity: 0;
+        }
     }
 
-         .navigationMenuList > li > a {
-        /* font-family: "Anton"; */
-                font-family: 'Bebas Neue', cursive;
-        font-size: 30px;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: var(--white);
-    }
-
-
-    
-     .navigationMenuList > li > button {
+    .navigationMenuList>li>a {
         /* font-family: "Anton"; */
         font-family: 'Bebas Neue', cursive;
         font-size: 30px;
@@ -162,7 +160,18 @@
         color: var(--white);
     }
 
-    .navigationMenuList > li:last-child > button {
+
+
+    .navigationMenuList>li>button {
+        /* font-family: "Anton"; */
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: var(--white);
+    }
+
+    .navigationMenuList>li:last-child>button {
         /* font-family: "Anton"; */
         font-family: 'Bebas Neue', cursive;
         font-size: 30px;
@@ -171,20 +180,20 @@
         color: rgb(196, 4, 4);
     }
 
-    .navigationMenuList > li > button::selection {
+    .navigationMenuList>li>button::selection {
         background-color: rgb(4, 4, 89);
     }
 
     .navigationMenuList>li>a:hover {
-            color: rgb(196, 4, 4);
-        }
+        color: rgb(196, 4, 4);
+    }
 
-        .navigationMenuList>li>button:hover {
-            color: rgb(196, 4, 4);
-        }
+    .navigationMenuList>li>button:hover {
+        color: rgb(196, 4, 4);
+    }
 
-        .navigationMenuList>li:last-child >button:hover {
-            color: white;
-        }
-    
+    .navigationMenuList>li:last-child>button:hover {
+        color: white;
+    }
+
 }

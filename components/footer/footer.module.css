@@ -2,11 +2,15 @@
     display: flex;
     padding-top: 50px;
     color: #fff;
+    position: relative;
 }
 .footer__list{
     list-style: none;
     text-transform: uppercase;
     position: relative;
+}
+.footer__item{
+    font-size: 18px;
 }
 @media screen and (min-width: 320px) {
     .footer__list{
@@ -14,15 +18,15 @@
     }
 
     .footer__modal__list>li {
-    width: 110px;
+    /* width: 110px; */
     padding: 1px;
 }
     .footer{
-        padding-bottom: 50px;
+        padding-bottom: 10px;
         justify-content: space-evenly;
     }
     .footer__item:not(:last-child){
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
     }
     .footer__image{
         flex-flow: row wrap;
@@ -30,34 +34,35 @@
 
     }
     .footer__modal__list{    
-        left: 145px;
+        /* left: 145px; */
     }
     .footer__modal__list__work{
-        left: 175px;
-        top: -50px;
+       display: flex;
+       text-align: start;
+       flex-direction: column;
     }
     .footer__modal__list__language{
         top:0;
-        left:175px;
+        /* left:175px; */
     }
 
-    .footer__item > ul{
+    /* .footer__item > ul{
         position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             text-decoration: none;
-            /* font-family: "Anton"; */
-            font-family: 'Bebas Neue', cursive;
-            font-size: 11px;
+
+            font-family: 'Bebas Neue', cursive;            font-size: 11px;
+
                 font-weight: 100;
                 letter-spacing: 2px;
                      
     width: 100%;
     list-style: none;
     padding: 0;
-}
+} */
 }
 
 @media screen and (min-width: 768px) {
@@ -76,10 +81,10 @@
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
-        /* margin-bottom: 30px; */
+        margin-bottom: 30px;
     }
     .footer__item:not(:last-child){
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .footer__item{
         margin-bottom: 0;
@@ -96,7 +101,7 @@
     }
 
         .footer__modal__list>li {
-    width: 150px;
+    /* width: 150px; */
     padding: 1px;
 }
     /* .footer__modal__list__work{
@@ -116,74 +121,63 @@
     top:30px;
    }
 
-   .footer__item>ul {
+   /* .footer__item>ul {
        position: absolute;
        display: flex;
        align-items: center;
        justify-content: center;
        flex-direction: column;
        text-decoration: none;
-       /* font-family: "Anton"; */
-    font-family: 'Bebas Neue', cursive;
-       font-size: 12px;
+            font-family: 'Bebas Neue', cursive;
+                   font-size: 12px;
        font-weight: 100;
-       letter-spacing: 2px;
+       letter-spacing: 3px;
 
        width: 100%;
        list-style: none;
        padding: 0;
-   }
+   } */
     
 }
 @media screen and (min-width: 1280px) {
     .footer {
-            padding-bottom: 50px;
+            padding-bottom: 10px;
         }
     .footer__list{
 
     }
 
     .footer__modal__list>li {
-    width: 180px;
+    /* width: 180px; */
     padding: 1px;
 }
 
+        .footer__about {
+            transform: translate(-50px, 30px)
+            /* margin-bottom: auto; */
+    
+        }
+    
+        /* .footer__about__1 {
+            margin-bottom: auto;
+        } */
+
+/* 
     .footer__item > ul{
         position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: row;
+            flex-direction: column;
             text-decoration: none;
-            /* font-family: "Anton"; */
             font-family: 'Bebas Neue', cursive;
-            font-size: 18px;
+              font-size: 18px;
                 font-weight: 100;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
                      
     width: 100%;
     list-style: none;
     padding: 0;
-}
-
-.footer__image {
-    width: 15vw;
-    height: .5px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.qweTitle {
-  font-family: 'Bebas Neue', cursive;
-font-size: 28px;
-letter-spacing: 2px;
-}
-
-.qweSubTitle {
-font-family: 'Bebas Neue', cursive;
-    font-size: 14px;
-    letter-spacing: 2px;
 }
 
 }
@@ -202,19 +196,22 @@ font-family: 'Bebas Neue', cursive;
     cursor: pointer;
 }
 .footer__item > p{
-    /* font-family: "Anton"; */
+
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-size: 20px;
     margin: 0px;
 }
 
 
-.footer__about{
-    
-}
+
 .footer__works>ul>li>a{
 color:black
+}
+.footer__works{
+    margin-bottom: auto;
+    width: 180px;
+   
 }
 .footer__language{
     position: relative;
@@ -227,26 +224,27 @@ color:black
 
 }
 .footer__contacts{
-
+margin-top: auto;
 }
 .footer__follow{
 
 }
-/* .footer__image {
+.footer__image{
     width: 120px;
     height: 100px;
-    display: flex;
-    align-items: flex-start;
-    transform: translateY(-10px);
-    justify-content: center;
+    position: absolute;
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* transform: translateY(-10px); */
+    /* justify-content: center; */
  
-} */
+}
 .footer__modal__list{
 
 }
-/* .footer__modal__list>li:not(:last-child){
+.footer__modal__list>li:not(:last-child){
     margin-bottom: 3px;
-} */
+}
 
 
 .footer__modal__list>li>a{
@@ -254,3 +252,163 @@ color:black
     text-decoration: none;
 
 }
+/* .footer__bottom{
+    display: flex;
+    flex-direction: row;
+} */
+
+.footer__list__disen{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 250px;
+}
+/* .footer__list__disen > li:first-child{
+    margin-top: auto;
+}
+.footer__list__disen>li:last-child {
+    margin-bottom: auto;
+} */
+
+.footer__about__1{
+    margin-top: auto;
+}
+.footer__about__1:last-child {
+    transform: translateX(-65px);
+}
+.footer__contacts__1{
+    margin-bottom: auto;
+    transform: translateX(-80px);
+}
+
+/* ___________________________________ */
+
+/* Footer experiens */
+
+/* ____________________________________ */
+
+.footer__experiens{
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.footer__experiens__list{
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Anton";
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    width: 100%;
+    list-style: none;
+}
+.footer__experiens__works > ul > li{
+font-size: 30px;
+color: #b00000;
+}
+.footer__experiens__second{
+    height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.footer__experiens__second__about{
+    transform: translateX(-120px);
+}
+ .footer__experiens__filmmaking{
+    transform: translateX(210px);
+ }
+ .footer__experiens__follow__list > li{
+font-size: 30px;
+    color: #b00000;
+ }
+ .footer__experiens__follow__list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+ }
+ .footer__experiens__follow{
+    text-align: end;
+ }
+ .footer__experiens__lang{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .footer__experiens__lang__list > li{
+    font-size: 30px;
+        color: #b00000;
+ }
+
+ .footer__image{
+    top: 35%;
+    left: 47%;
+ }
+
+
+ /* ____________________________________________ */
+
+ /* footer__standart */
+
+ /* ____________________________________________ */
+
+
+ .footer__standart{
+
+    position: relative;
+    /* height: ; */
+ }
+ .footer__standart__list{
+    padding-top: 50px;
+    padding-right: 140px;
+    padding-left: 440px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-family: "Anton";
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    width: 100%;
+    list-style: none;
+ }
+ .footer__standart__list > li{
+    width: 33.33%;
+    margin-bottom: 50px;
+ }
+ .footer__standart__list > li > p {
+    font-size: 30px;
+ }
+ .footer__standart__examples{
+    transform: translate(100%);
+ }
+ .footer__standart__priem{
+    font-family: "Anton";
+    font-weight: 400;
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40%;
+    left: -50px;
+    transform: rotate(270deg);
+    margin-bottom: 0;
+ }
+ .footer__standart__works__list{
+    color:#b00000
+ }
+ .footer__standart__list > li > ul > li {
+    color: #b00000;
+ }

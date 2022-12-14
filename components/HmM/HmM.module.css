@@ -1,0 +1,244 @@
+.HmM{
+    /* position: relative; */
+    /* padding-bottom: 30px; */
+    background-color: black;
+}
+.HmM__list{
+
+}
+
+.HmM__item{
+    /* position: sta; */
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        height: auto; */
+        text-align: center;
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items:center;
+        color: white;
+        flex-direction: column;
+        /* width: 75vw; */
+        /* width: 160px; */
+        font-family: 'Bebas Neue', cursive;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+}
+.HmM__item:last-child{
+    /* padding-bottom: 300px; */
+}
+
+.HmM__item:not(:last-child){
+    margin-bottom: 40vh;
+}
+/* .HmM__item:not(:last-child){
+    display: none;
+} */
+.HmM__item>p{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.HmM__about{
+
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    
+}
+.video1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+
+}
+/* .video__2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: right;
+
+} */
+.videoContainer {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 50%;
+    min-height: 100vh;
+    height: 100%;
+}
+.videoContainer{
+    position: sticky;
+    /* left: 50%; */
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+.videoContainer__1{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+.video__1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+
+}
+.videoBox__2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top:0;
+    flex-direction: row;
+}
+.videoContainer__2__1{
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+}
+.videoContainer__2__2{
+    width: 50%;
+    height: 100%;
+    
+    min-height: 100vh;
+}
+.video__2__1{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    object-fit: cover;
+}
+.video__2__2{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    object-fit: cover;
+}
+.videoBox__3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top:0;
+    flex-direction: row;
+}
+.videoContainer__3__1{
+    width: calc(100vw/3);
+    height: 100%;
+    min-height: 100vh;
+}
+.videoContainer__3__2{
+    width: calc(100vw/3);
+    height: 100%;
+    min-height: 100vh;
+}
+.videoContainer__3__3{
+    width: calc(100vw/3);
+    height: 100%;
+    min-height: 100vh;
+}
+.video__3__1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+}
+.video__3__2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+
+}
+.video__3__3{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+
+    object-fit: cover;
+}
+.HmM__box{
+    transform: translateY(-50vh);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 150px; */
+}
+@media screen and (min-width:768px){
+    .HmM__item{
+        font-size: 40px;
+    }
+
+    .HmM__item:not(:last-child){
+    margin-bottom: 60vh;
+}
+    .HmM__description:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .HmM__item>p{
+        font-size: 50px;
+        margin-bottom: 30px; 
+    }
+}
+
+
+/* 
+@media screen and (min-width:320px){
+    .zxc1{
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+    }
+    .zxc2{
+        display: none;
+    }
+    .zxc3{
+        display: none;
+    }
+    .asd1{
+        top:0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: /;
+    }
+    .asd2{
+        display: none;
+    }
+    .asd3{
+        display: none;
+    }
+} */

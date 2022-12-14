@@ -5,12 +5,15 @@ import s from "./Hero.module.css";
 
 export const Hero = () => {
   const [scroll, setScroll] = useState(true);
-  // const [pos, setPos] = useState("none");
 
   const router = useRouter();
 
   const visibleButtonLangeage = () => {
     let target = document.getElementById("footer");
+
+    if (!target) {
+      return;
+    }
 
     var targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
@@ -20,10 +23,8 @@ export const Hero = () => {
       };
 
     if (targetPosition.top < windowPosition.bottom) {
-      // setPos("isFixed");
       setScroll(false);
     } else {
-      // setPos("none");
       setScroll(true);
     }
   };
@@ -42,20 +43,17 @@ export const Hero = () => {
       <div className={s.videoContainer}>
         <video
           className={s.video}
-          // playsInline
+          playsInline
           autoPlay
           loop
           muted
+          type="video/mp4"
           src={require("../../Video/Video3.mp4")}
         />
-        <div className={s.title}>
-          <span>P</span>
-          <span>R</span>
-          <span>I</span>
-          <span>Ë</span>
-          <span>M</span> PRODUCTION
-        </div>
-        <Link href={`${router.pathname}/works`}>Check out all works</Link>
+        <h1 className={s.title}>PRIЁM PRODUCTION</h1>
+        <Link href={`${router.pathname}/works`} prefetch={false} passHref>
+          <a>Check out all works</a>
+        </Link>
         {scroll && (
           <div className={s.ChangeLangButtonContainer}>
             <button>
@@ -73,3 +71,14 @@ export const Hero = () => {
     </section>
   );
 };
+
+{
+  /* <iframe
+  src="https://player.vimeo.com/video/767582772?h=6a89bce21d"
+  width="640"
+  height="564"
+  frameborder="0"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+></iframe>; */
+}

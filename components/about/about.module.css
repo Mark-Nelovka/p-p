@@ -1,6 +1,5 @@
 @media screen and (min-width: 320px) {
   .wrap {
-    background-color: #000;
     padding: 90px 25px 80px 25px;
     width: 100%;
   }
@@ -10,12 +9,11 @@
     margin: 0 auto;
   }
 
-      .section:first-child {
+  .section:first-child {
     margin-bottom: 50px;
   }
 
   .p {
-    /* font-family: "Anton"; */
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     letter-spacing: 3px;
@@ -50,7 +48,6 @@
   .name_p {
     text-align: center;
     letter-spacing: 3px;
-    /* font-family: "Anton"; */
     font-family: 'Bebas Neue', cursive;
     word-spacing: 100vw;
     font-size: 32px;
@@ -63,7 +60,6 @@
   .role_p {
     text-align: center;
     letter-spacing: 2px;
-    /* font-family: "Anton"; */
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     line-height: 1.2;
@@ -89,7 +85,7 @@
 
 @media screen and (min-width: 768px) {
 
-        .section:first-child {
+  .section:first-child {
     margin-bottom: 100px;
   }
 
@@ -128,6 +124,8 @@
 
 @media screen and (min-width: 1280px) {
   .wrap {
+    z-index: 1;
+    /* position: relative; */
     /* height: 100vh; */
     /* padding: 150px 180px; */
   }
@@ -136,13 +134,12 @@
     max-width: 785px;
   }
 
-    .section:first-child {
+  .section:first-child {
     margin-bottom: 80px;
   }
 
   .p {
-font-family: 'Bebas Neue', cursive;
-/* font-family: 'Sulphur Point', sans-serif; */
+    font-family: 'Bebas Neue', cursive;
     font-size: 48px;
     line-height: 50px;
     text-transform: uppercase;
@@ -150,6 +147,11 @@ font-family: 'Bebas Neue', cursive;
 
   .team_list {
     justify-content: space-evenly;
+  }
+
+    .card_team {
+      position: relative;
+    /* height: 401px; */
   }
 
   .card_team:first-child {
@@ -163,35 +165,45 @@ font-family: 'Bebas Neue', cursive;
     top: 0;
     margin-top: 5px;
     width: 100%;
-        text-align: center;
+    text-align: center;
   }
 
   .name_p {
-        /* font-family: "Anton"; */
-        font-family: 'Bebas Neue', cursive;
-        display: block;
-            letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    letter-spacing: 3px;
     /* text-transform: uppercase; */
   }
 
   .role_p {
     text-align: center;
-    /* font-family: "Anton"; */
     font-family: 'Bebas Neue', cursive;
     margin-bottom: 5px;
-        letter-spacing: 2px;
+    letter-spacing: 2px;
   }
 
   .social_link {
     font-size: 30px;
   }
 
-  .card_team {
-    /* max-width: 370px; */
-  }
-
   .team_list {
     flex-wrap: wrap;
     flex-direction: row;
   }
+}
+
+  /* .about {
+width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+ } */
+
+ .zxc {
+  background-image: url('../../images/back-three.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    /* height: 100vh; */
 }

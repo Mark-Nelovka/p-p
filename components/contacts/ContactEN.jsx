@@ -6,6 +6,7 @@ import {
   TEL_GLEB,
   TEL_IRA,
 } from "../../Constants/Constants";
+// import Link from "next/link";
 // import { useCallback, useEffect, useState } from "react";
 
 export const Contacts = () => {
@@ -41,34 +42,26 @@ export const Contacts = () => {
   // }, [styleAbout]);
 
   return (
-    <section
-      id="contacts"
-      className={s.contactsSection}
-      style={{ backgroundColor: "#b00000" }}
-    >
-      <div className="containerStretch">
-        <div className={s.wrap}>
-          <div className={s.section}>
-            <h2 className={s.title}>How to contact us</h2>
-            <div className={s.social_list}>
-              <div className={s.socialListContainer}>
-                <p className={s.text}>
-                  see our works
-                  <br />
-                  <a
-                    className={s.social_link}
-                    target="_blank"
-                    rel="noreferrer"
-                    href={INSTAGRAM}
-                  >
+    <section id="contacts" className={s.contactsSection}>
+      {/* <div className="containerStretch"> */}
+      <div className={s.wrap}>
+        <div className={s.section}>
+          <h2 className={s.title}>How to contact us</h2>
+          <div className={s.social_list}>
+            <div className={s.socialListContainer}>
+              <div className={s.containerLink}>
+                <p className={s.text}>see our works</p>
+                <p className={s.social_link}>
+                  <a href={INSTAGRAM} target="_blank" rel="noreferrer">
                     Instagram
                   </a>
                 </p>
-                <p className={s.text}>
-                  our mail
-                  <br />
+              </div>
+              <div className={s.containerLink}>
+                <p className={s.text}>our mail</p>
+
+                <p className={s.social_link}>
                   <a
-                    className={s.social_link}
                     target="_blank"
                     href={`mailto:${EMAIL_PRODUCTION}`}
                     rel="noreferrer"
@@ -77,34 +70,32 @@ export const Contacts = () => {
                   </a>
                 </p>
               </div>
-              <div className={s.phonesContainer}>
-                <p className={s.text}>
-                  Phones
-                  <br />
-                  <a className={s.social_link} href={`tel:${TEL_GLEB}`}>
-                    {TEL_GLEB}
-                  </a>
-                  <br />
-                  <a className={s.social_link} href={`tel:${TEL_IRA}`}>
-                    {TEL_IRA}
-                  </a>
-                </p>
-              </div>
             </div>
+            <div className={s.phonesContainer}>
+              <p className={s.text}>Phones</p>
 
-            <form className={s.subscribe_form} autoComplete="off">
-              <input
-                className={s.subscribe_form__input}
-                type="email"
-                placeholder="Your email"
-              />
-              <button className={s.btn} type="submit">
-                Subscribe
-              </button>
-            </form>
+              <p className={s.social_link}>
+                <a href={`tel:${TEL_GLEB}`}>{TEL_GLEB}</a>
+              </p>
+              <p className={s.social_link}>
+                <a href={`tel:${TEL_IRA}`}>{TEL_IRA}</a>
+              </p>
+            </div>
           </div>
+
+          <form className={s.subscribe_form} autoComplete="off">
+            <input
+              className={s.subscribe_form__input}
+              type="email"
+              placeholder="Your email"
+            />
+            <button className={s.btn} type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 };

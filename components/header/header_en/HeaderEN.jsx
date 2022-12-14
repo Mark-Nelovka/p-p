@@ -44,11 +44,9 @@ export default function HeaderEn() {
   }, [visibleLogo]);
 
   const toggleShowMenu = (e) => {
-    console.log(show);
     const { id } = e.currentTarget;
     if (e.key === "Escape" || id === "close") {
       setShow("close");
-      window.removeEventListener("keydown", toggleShowMenu);
     }
   };
 
@@ -65,18 +63,23 @@ export default function HeaderEn() {
               <Image src={MobileMenu} alt="Menu" />
             </button>
             <button className={animLogo ? s.animationLogo : s.logoContainer}>
-              <Link href="/en">
-                <Image
-                  src={LogoHeader}
-                  alt="Logo in header"
-                  width="70"
-                  height="70"
-                />
+              <Link href="/en" passHref>
+                <a>
+                  <Image
+                    src={LogoHeader}
+                    alt="Logo in header"
+                    width="70"
+                    height="70"
+                    priority
+                  />
+                </a>
               </Link>
             </button>
             <ul className={s.navigationMenuList}>
               <li>
-                <Link href="/en/works">Works</Link>
+                <Link href="en/works" prefetch={false} passHref>
+                  <a>Works</a>
+                </Link>
               </li>
               <li>
                 <button id="aboutButton" onClick={scrollToSection}>

@@ -7,7 +7,7 @@ import {
   INSTAGRAM,
   EMAIL_PRODUCTION,
 } from "../../../Constants/Constants";
-import LogoMobile from "../../../images/Logo.png";
+import LogoMobile from "../../../images/LogoFix-removebg-preview.png";
 import CloseModalIcon from "../../../images/Close-icon.svg";
 import INST from "../../../images/instagram.svg";
 import s from "./mobMenuEn.module.css";
@@ -19,12 +19,9 @@ export default function MobileMenuEn({ toggleShowMenu, show }) {
       return;
     }
     window.addEventListener("keydown", toggleShowMenu);
-    // return () =>
-    // if (show === "close") {
-    //   console.log("first");
-    //   window.removeEventListener("keydown", toggleShowMenu);
-    //   return;
-    // }
+    return () => {
+      window.removeEventListener("keydown", toggleShowMenu);
+    };
   }, [toggleShowMenu, show]);
 
   return (
@@ -35,7 +32,9 @@ export default function MobileMenuEn({ toggleShowMenu, show }) {
 
       <ul className={s.menuList}>
         <li className={s.menuItem}>
-          <Link href="/en/works">Works</Link>
+          <Link href="works" prefetch={false}>
+            Works
+          </Link>
         </li>
         <li className={s.menuItem}>
           <button id="aboutButton" onClick={scrollToSection}>
