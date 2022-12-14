@@ -1,7 +1,7 @@
 import s from "./about.module.css";
 import Image from "next/image";
 import Gleb from "../../images/co-founders/Gleb-director.jpg";
-import Ira from "../../images/co-founders/Ira-producer";
+import Ira from "../../images/co-founders/Ira-producer.png";
 
 export const About = () => {
   console.log("build");
