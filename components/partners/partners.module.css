@@ -6,8 +6,8 @@
     
 }
 .partners__item{
-    position: relative;
-    margin-bottom: 20px;
+    /* position: relative;
+    margin-bottom: 20px; */
 }
 
 .partners{
@@ -15,25 +15,32 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%, rgba(167, 91, 91, 1) 60%, rgba(203, 5, 5, 1) 93%);
 }
 .partners__text{
-    height: 100px;
+    /* height: 100px; */
         letter-spacing: 3px;
         font-family: 'Bebas Neue', cursive;
+        font-weight: bold;
+        text-align: center;
         font-size: 28px;
         line-height: 1;
+        margin-top: 10px;
 }
 
-        .partnersButtonMore {
-            width: 100%;
-            padding: 30px;
-        }
+.partnersButtonMore {
+    width: 100%;
+    padding: 30px;
+    }
     
-        .arrowMore {
-            font-size: 20px;
-            animation: more 1.2s linear infinite;
-        }
+.arrowMore {
+    font-size: 20px;
+    animation: more 1.2s linear infinite;
+    }
 @media screen and (min-width: 320px) {
     .partners__item{
-        width: 200px;
+        max-width: 300px;
+    }
+
+    .partners__item:not(:last-child){
+        margin-bottom: 40px;
     }
 }
 
@@ -41,24 +48,37 @@
     .partners__list {
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             margin-bottom: -30px;
+            /* margin-right: -30px; */
+            /* width: 100vw; */
+            /* min-width: calc(100vw / 2 - 60px); */
         }
     .partners__name{
-        font-size: 35px;
+        font-size: 20px;
     }
+
     .partners__item{
-        display: flex;
-        align-items: center;
-        width: 600px;
+        /* display: flex;
+        align-items: center; */
+        /* width: 600px; */
+        /* min-width: calc(100vw / 3 - 60px); */
         flex-direction: row;
         margin-bottom: 30px;
     }
+
+    .partners__item {
+        margin-right: 30px;
+    }
+
     .partners__text{
-        margin-left: 25px;
+        /* color: white; */
+        font-weight: normal;
+        /* margin-left: 25px; */
         font-size: 25px;
     }
+
     .partners__iamge {
         width: 300px;
     }

@@ -1,32 +1,17 @@
-import s from "./about.module.css";
 import Image from "next/image";
 import Gleb from "../../images/co-founders/Gleb-director.jpg";
 import Ira from "../../images/co-founders/Ira-producer.jpg";
+import s from "./about.module.css";
 
 export const About = () => {
-  console.log("build");
   return (
     <section id="about" className={s.zxc}>
       <div className={`${s.wrap}`}>
-        <div className={`${s.section}`}>
-          <p className={`${s.p}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            voluptates ea enim velit sequi maiores ex. Rerum porro voluptatum,
-            aperiam molestiae temporibus facere ut voluptatibus nihil explicabo
-            tempora deleniti impedit at officia! Laudantium delectus accusantium
-            itaque debitis eius, ratione nihil, aspernatur, minus nulla et
-            neque?
-          </p>
-        </div>
-        <div className={`${s.section}`}>
+        <div className={`${s.containerFotoCreators}`}>
           <ul className={s.team_list}>
             <li className={s.card_team}>
               <div>
-                <Image
-                  src={Ira}
-                  alt="person"
-                  // width={370} height={401}
-                />
+                <Image src={Ira} alt="person" />
               </div>
               <div className={s.text_wrap}>
                 <p className={s.role_p}>Producer</p>
@@ -51,6 +36,11 @@ export const About = () => {
             </li>
           </ul>
         </div>
+        <p className={`${s.textAbout}`}>
+          Production company for the creation of creative and commercial
+          projects. From idea to implementation on screen. From video per minute
+          to full-length pictures. Your equipment, your team, your style.
+        </p>
       </div>
     </section>
   );

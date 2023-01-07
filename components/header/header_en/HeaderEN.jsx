@@ -8,6 +8,8 @@ import MobileMenuEn from "../../mobileMenu/mobileMenu_en/MobileMenuEN";
 import Backdrop from "../../../General/Backdrop";
 import Link from "next/link";
 import scrollToSection from "../../../General/scrollToSection";
+import toggleBackdrop from "../../../General/toggleBackdrop";
+import { throttle } from "throttle-debounce";
 
 export default function HeaderEn() {
   const [show, setShow] = useState("one");
@@ -34,26 +36,30 @@ export default function HeaderEn() {
     }
   }, []);
 
+  const resizeWindow = () => {
+    if (window.innerWidth > 1280) setShow(false);
+  };
+
   useEffect(() => {
     if (window) {
       window.addEventListener("scroll", visibleLogo);
+      window.addEventListener("resize", throttle(1000, resizeWindow));
     }
     return () => {
       window.removeEventListener("scroll", visibleLogo);
     };
   }, [visibleLogo]);
 
-  const toggleShowMenu = (e) => {
-    const { id } = e.currentTarget;
-    if (e.key === "Escape" || id === "close") {
-      setShow("close");
+  const toggleShowBackdrop = (e) => {
+    if (typeof toggleBackdrop(e) === "undefined") {
+      return;
     }
+    setShow(toggleBackdrop(e));
   };
 
   return (
     <>
-      {show === "show" && <Backdrop toggleShowMenu={toggleShowMenu} />}
-      <section className={s.headerSection}>
+      <header className={s.headerSection}>
         <div className="containerStretch">
           <div className={s.headerContainer}>
             <button
@@ -87,6 +93,11 @@ export default function HeaderEn() {
                 </button>
               </li>
               <li>
+                <Link href="en/courses" prefetch={false} passHref>
+                  <a>Courses</a>
+                </Link>
+              </li>
+              <li>
                 <button id="contactsButton" onClick={scrollToSection}>
                   Contacts
                 </button>
@@ -94,8 +105,12 @@ export default function HeaderEn() {
             </ul>
           </div>
         </div>
-      </section>
-      <MobileMenuEn toggleShowMenu={toggleShowMenu} show={show} />
+      </header>
+      {show === "show" && (
+        <Backdrop toggleShowBackdrop={toggleShowBackdrop}>
+          <MobileMenuEn toggleShowBackdrop={toggleShowBackdrop} show={show} />
+        </Backdrop>
+      )}
     </>
   );
 }

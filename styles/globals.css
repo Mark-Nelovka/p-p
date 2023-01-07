@@ -1,7 +1,8 @@
-  html {
+  html, body {
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+        margin: 0;
+       
         /* scrollbar-color: #6969dd #e0e0e0;
           scrollbar-width: thin; */
   }
@@ -23,10 +24,6 @@
   *:before,
   *:after {
     box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
   }
 
   h1,
@@ -96,7 +93,6 @@
   :root {
     --black: #000000;
     --white: #ffffff;
-    --vh: 3.93px;
   }
 
 
@@ -113,12 +109,14 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #161414;
-  opacity: .7;
+  background-color: rgba(22, 20, 20, 0.9);
   z-index: 1;
+      /* pointer-events: none; */
 }
 footer{
   background-color: black;
+  color: white;
+  text-transform: uppercase;
 }
 
  @media screen and (max-width: 767px) {
@@ -146,37 +144,15 @@ footer{
      padding-right: 50px;
    }
  }
-
+/* 
  @media screen and (min-width: 1920px) {
    .containerStretch {
      min-width: 1920px;
      padding-left: 100px;
      padding-right: 100px;
    }
- }
-
-   .isFixed {
-    position: fixed;
-    width: 100%;
-  }
-
-    .qwe {
-    position: relative;
-    padding-top: 100vh;
-  }
-
-      .qweBack {
-    position: relative;
-    padding-bottom: 200vh;
-  }
-
-  .asd {
-    position: relative;
-    padding-top: 200vh;
-  }
+ } */
 
     video::-webkit-media-controls {
       display: none !important;
     }
-
-/* #000a2ce3 */

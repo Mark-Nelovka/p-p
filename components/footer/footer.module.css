@@ -371,12 +371,12 @@ font-size: 30px;
  .footer__standart__list{
     padding-top: 50px;
     padding-right: 140px;
-    padding-left: 440px;
+    padding-left: 340px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    font-family: "Anton";
+    font-family: 'Bebas Neue', cursive;
     font-size: 50px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -395,16 +395,17 @@ font-size: 30px;
     transform: translate(100%);
  }
  .footer__standart__priem{
-    font-family: "Anton";
-    font-weight: 400;
+        font-family: 'Bebas Neue', cursive;    
+        font-weight: 400;
     display: block;
     font-size: 40px;
     color: #ffffff;
     position: absolute;
-    bottom: 40%;
+    bottom: 42%;
     left: -50px;
     transform: rotate(270deg);
     margin-bottom: 0;
+    letter-spacing: 2px;
  }
  .footer__standart__works__list{
     color:#b00000
@@ -412,3 +413,8 @@ font-size: 30px;
  .footer__standart__list > li > ul > li {
     color: #b00000;
  }
+
+  .footer__standart__list>li>ul>li:hover {
+    cursor: pointer;
+      color: #fff;
+  }

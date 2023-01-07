@@ -6,41 +6,9 @@ import {
   TEL_GLEB,
   TEL_IRA,
 } from "../../Constants/Constants";
-// import Link from "next/link";
-// import { useCallback, useEffect, useState } from "react";
+import FormSubscribe from "../../General/Form";
 
 export const Contacts = () => {
-  // const [fix, setFix] = useState("qwe");
-
-  // const styleAbout = useCallback(() => {
-  //   let target = document.getElementById("footer");
-
-  //   if (!target) {
-  //     return;
-  //   }
-  //   var targetPosition = {
-  //       top: window.pageYOffset + target.getBoundingClientRect().top,
-  //     },
-  //     windowPosition = {
-  //       bottom: window.pageYOffset + document.documentElement.clientHeight,
-  //     };
-
-  //   if (targetPosition.top < windowPosition.bottom) {
-  //     setFix("isFixed");
-  //   } else {
-  //     setFix("qwe");
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   if (window) {
-  //     window.addEventListener("scroll", styleAbout);
-  //   }
-  //   return () => {
-  //     window.removeEventListener("scroll", styleAbout);
-  //   };
-  // }, [styleAbout]);
-
   return (
     <section id="contacts" className={s.contactsSection}>
       {/* <div className="containerStretch"> */}
@@ -82,17 +50,23 @@ export const Contacts = () => {
               </p>
             </div>
           </div>
-
-          <form className={s.subscribe_form} autoComplete="off">
+          <FormSubscribe />
+          {/* <form
+            onSubmit={sendSubscribe}
+            className={s.subscribe_form}
+            autoComplete="off"
+          >
             <input
               className={s.subscribe_form__input}
-              type="email"
-              placeholder="Your email"
+              type="tel"
+              placeholder="Your phone"
+              onChange={(e) => setFormValue(e.target.value)}
+              value={formValue}
             />
             <button className={s.btn} type="submit">
               Subscribe
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
       {/* </div> */}

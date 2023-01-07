@@ -4,6 +4,8 @@ export default function scrollToSection(e) {
     let hookForAboutSection = document.getElementById("about");
     let hookForContactsSection = document.getElementById("contacts");
 
+    if (!hookForAboutSection || !hookForContactsSection) return;
+
     switch (id) {
       case "aboutButton":
         hookForAboutSection.scrollIntoView({

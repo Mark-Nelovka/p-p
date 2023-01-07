@@ -106,22 +106,9 @@ export default function Partners_en() {
       className={`${container.container__stretch} ${s.partners}`}
       id="partners"
     >
-      <ul className={s.partners__list}>
-        {arr.slice(0, 4).map((people) => {
-          return (
-            <li key={people.name} className={s.partners__item}>
-              <span className={s.partners__iamge}>
-                <Image fill="true" src={people.picture} alt={people.name} />
-              </span>
-              <div className={s.partners__text}>
-                <p className={s.partners__name}>{people.name}</p>
-                <p className={s.partners__employment}>{people.position}</p>
-              </div>
-            </li>
-          );
-        })}
-        {allShow &&
-          allShow.map((people) => {
+      <div>
+        <ul className={s.partners__list}>
+          {arr.slice(0, 4).map((people) => {
             return (
               <li key={people.name} className={s.partners__item}>
                 <span className={s.partners__iamge}>
@@ -134,7 +121,22 @@ export default function Partners_en() {
               </li>
             );
           })}
-      </ul>
+          {allShow &&
+            allShow.map((people) => {
+              return (
+                <li key={people.name} className={s.partners__item}>
+                  <span className={s.partners__iamge}>
+                    <Image fill="true" src={people.picture} alt={people.name} />
+                  </span>
+                  <div className={s.partners__text}>
+                    <p className={s.partners__name}>{people.name}</p>
+                    <p className={s.partners__employment}>{people.position}</p>
+                  </div>
+                </li>
+              );
+            })}
+        </ul>
+      </div>
       <button className={s.partnersButtonMore} onClick={showMore}>
         {allShow ? (
           <p className={s.arrowMore}>&uArr;</p>

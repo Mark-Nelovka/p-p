@@ -1,3 +1,7 @@
-export default function Backdrop({ toggleShowMenu }) {
-  return <div onClick={toggleShowMenu} id={"close"} className="backdrop"></div>;
+export default function Backdrop({ children, ...arqs }) {
+  return (
+    <div onClick={arqs.toggleShowBackdrop} id={"close"} className="backdrop">
+      {children}
+    </div>
+  );
 }
